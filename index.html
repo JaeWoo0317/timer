@@ -55,12 +55,6 @@
 </head><body>
 <nav class="nav"><div class="nav-inner"><a href="https://jwaytools.com/" class="nav-logo">J<span>WAY</span></a><button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button><div class="nav-links"><a href="https://jwaytools.com/char-counter/">글자수</a><a href="https://jwaytools.com/date-calculator/">날짜</a><a href="https://jwaytools.com/percent-calculator/">퍼센트</a><a href="https://jwaytools.com/salary-calculator/">연봉</a><a href="https://jwaytools.com/bmi-calculator/">BMI</a><a href="https://jwaytools.com/exchange-rate/">환율</a><a href="https://jwaytools.com/unit-converter/">단위</a><a href="https://jwaytools.com/timer/">타이머</a><a href="https://jwaytools.com/qr-generator/">QR</a><a href="https://jwaytools.com/color-converter/">색상</a><a href="https://jwaytools.com/random-picker/">랜덤</a><a href="https://jwaytools.com/loan-calculator/">대출</a><a href="https://jwaytools.com/age-calculator/">만나이</a><a href="https://jwaytools.com/savings-calculator/">예적금</a><a href="https://jwaytools.com/income-tax-calculator/">소득세</a></div></div></nav>
 <header class="header"><h1>온라인 <em>타이머</em></h1><p>타이머·스톱워치를 브라우저에서 바로 사용하세요. 요리, 운동, 공부, 발표 시간 측정에 활용합니다.</p></header>
-<div class="tool-hero-illust" style="max-width:760px;margin:24px auto 0;padding:0 20px">
-<div style="border-radius:12px;overflow:hidden;background:var(--surface-alt);min-height:120px;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--border)">
-<img src="hero-illustration.png" alt="도구 일러스트" style="width:100%;height:auto;display:block;max-height:300px" loading="lazy" onerror="this.parentElement.innerHTML='<div style='padding:30px 20px;text-align:center;color:#9E9E9E;font-size:13px'>🎨 도구 일러스트 자리 (hero-illustration.png 업로드 시 자동 표시)</div>'">
-</div>
-</div>
-
 <main class="container">
 <div class="tabs"><button class="tab-btn active" onclick="switchTab('timer')">⏱️ 타이머</button><button class="tab-btn" onclick="switchTab('stopwatch')">⏲️ 스톱워치</button></div>
 <div class="calc-card">
@@ -117,6 +111,18 @@
 
 <h2>스톱워치 활용법</h2>
 <p>스톱워치는 경과 시간을 측정하는 도구로, 시작·정지·랩·초기화 4가지 기능을 제공합니다. 랩 버튼을 누르면 현재 시점까지의 시간이 기록 리스트에 추가되며, 구간별 소요 시간도 함께 표시됩니다. 운동 세트별 시간 기록, 레시피별 조리 시간 측정, 업무별 소요 시간 분석 등 다양한 상황에서 활용할 수 있습니다.</p>
+
+<h2>정확도와 브라우저 제한</h2>
+<p>이 타이머는 브라우저의 JavaScript 타이머 기능과 현재 시간을 비교해 표시 시간을 보정합니다. 일반적인 공부, 요리, 운동, 회의 시간 관리에는 충분히 정확하지만, 과학 실험이나 공식 경기 기록처럼 0.01초 단위의 정밀성이 필요한 용도에는 전문 장비를 사용하는 것이 좋습니다.</p>
+<p>일부 모바일 브라우저는 배터리 절약을 위해 백그라운드 탭의 동작을 제한합니다. 화면을 끄거나 다른 앱으로 오래 전환하면 알림음이 늦게 울릴 수 있습니다. 중요한 알림이 필요하다면 브라우저 탭을 열어둔 상태에서 사용하세요.</p>
+
+<h2>실제 예시 3가지</h2>
+<h3>뽀모도로 4세트</h3>
+<p>25분 집중과 5분 휴식을 4번 반복하면 약 2시간 동안 집중 루틴을 만들 수 있습니다. 이 도구의 25분 프리셋과 5분 프리셋을 번갈아 사용하면 별도 앱 없이 간단한 뽀모도로 관리가 가능합니다.</p>
+<h3>운동 인터벌</h3>
+<p>플랭크 60초, 휴식 30초처럼 짧은 구간을 반복하는 운동에서는 타이머와 스톱워치를 함께 사용할 수 있습니다. 랩 기능을 쓰면 세트별 기록을 비교하기 쉽습니다.</p>
+<h3>발표 리허설</h3>
+<p>5분 발표, 10분 회의, 30분 강의처럼 제한 시간이 있는 상황에서 타이머를 켜두면 시간 초과를 줄일 수 있습니다. 남은 시간을 시각적으로 확인할 수 있어 발표 흐름을 조절하기 좋습니다.</p>
 
 <h2>이 도구의 주요 기능</h2>
 <p>타이머와 스톱워치를 한 페이지에서 탭 전환으로 사용할 수 있습니다. 타이머는 1분·3분·5분·10분·25분·1시간 프리셋과 직접 입력(시·분·초)을 모두 지원합니다. 원형 프로그레스 링으로 남은 시간의 비율을 시각적으로 확인할 수 있습니다. 스톱워치는 밀리초 단위까지 측정하며, 랩 기록을 목록으로 보여줍니다. 모든 기능은 브라우저 내에서 처리되며, 설치나 회원가입이 필요하지 않습니다.</p>
